@@ -1,6 +1,6 @@
 {
   "name": "saga-observable",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Build Observables that allow redux-saga to promise future actions",
   "main": "dist/saga-observable.js",
   "author": "Braden R. Napier",
@@ -37,6 +37,7 @@
     "yargs": "^8.0.1"
   },
   "dependencies": {
+    "promise-queue-observable": "^1.0.6",
     "set-queue": "^1.0.5"
   },
   "peerDependencies": {

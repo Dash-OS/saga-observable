@@ -1,5 +1,5 @@
 export default {
-  name: 'promise-queue-observable',
+  name: 'saga-observable',
   
   webpack: {
     libraryTarget: 'umd',
