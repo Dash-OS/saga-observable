@@ -31,7 +31,7 @@ export function* watchUserPositionSaga(options = { enableHighAccuracy: true }) {
   } catch (e) {
     // handle errors
   } finally {
-    if ( observer.cancelled() ) {
+    if ( yield observer.cancelled() ) {
       // handle cancellation
     }
     navigator.geolocation.clearWatch(id)
