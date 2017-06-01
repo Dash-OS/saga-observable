@@ -4,6 +4,9 @@ Abstracts [PromiseQueue](https://github.com/Dash-OS/promise-queue-observable) to
 add the redux-saga cancellation logic on top.  This allows us to easily wait for 
 future actions / events in our sagas. 
 
+If you are not using [redux-saga](https://github.com/redux-saga/redux-saga) then you 
+probably should be looking at the PromiseQueue package above. 
+
 ### Simple Example
 
 ```js

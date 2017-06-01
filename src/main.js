@@ -21,14 +21,5 @@ export default class SagaObservable {
   next = () => this.observable.next()
   publish = (...args) => this.observable.publish(...args)
   cancel = () => this.observable.cancel()
-  cancelled = () => {
-    if ( this.observable.cancelled() ) {
-      cancelled()
-      return true
-    } else {
-      const sagaCancelled = cancelled()
-      if ( sagaCancelled ) { this.observable.cancel() }
-      return sagaCancelled
-    }
-  }
+  cancelled = () => this.observable.cancelled()
 }
